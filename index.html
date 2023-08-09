@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <nav>
+        <div class="index-logo">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <div class="login-logout">
+          <a href="/">Login</a>
+          <a href="/pages/register.html">SignUp</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="login">
+        <h3>Login</h3>
+        <form action="">
+          <div class="lable">
+            <label for="email">Email</label>
+            <input
+              class="email"
+              type="email"
+              name="email"
+              placeholder="Enter registerd email"
+              autocomplete="off"
+            />
+          </div>
+          <div class="lable">
+            <label for="password">Password</label>
+
+            <input
+              class="password"
+              type="password"
+              name="'password"
+              placeholder="Enter Password"
+              autocomplete="true"
+            />
+          </div>
+          <p class="error">Invalid Email or Password</p>
+          <button type="submit">
+            Login <i class="fa-solid fa-right-to-bracket"></i>
+          </button>
+          <!-- <input class="submit" type="submit" value="Login" /> -->
+        </form>
+        <p>
+          Don’t have an account? <a href="/pages/register.html">Register Now</a>
+        </p>
+      </div>
+    </div>
+    <script src="/src/index.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Products</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="dashboard-container hide">
+      <header>
+        <nav>
+          <div class="logo"></div>
+          <div class="menu">
+            <ul class="list">
+              <li class="list-item">
+                <a href="/pages/allProducts.html"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </li>
+              <li class="list-item">
+                <a href="/pages/manageCategory.html"
+                  ><i class="fa-solid fa-table-list"></i
+                ></a>
+              </li>
+              <li class="list-item">
+                <a href="/pages/addProduct.html"
+                  ><i class="fa-solid fa-cart-plus"></i
+                ></a>
+              </li>
+              <li class="list-item logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="dashboard">
+        <div class="all-products">
+          <div class="filter">
+            <label for="category">Select Category</label>
+            <select name="category" class="select-category">
+              <option selected value="">Clear filter</option>
+            </select>
+          </div>
+          <div class="all-product-list">
+            <div class="single-product">
+              <h1 class="total-products"></h1>
+              <div class="product-item"></div>
+            </div>
+            <div class="view-product"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../src/allProducts.js" type="module"></script>
+  </body>
+</html>

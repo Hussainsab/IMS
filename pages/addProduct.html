@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Product</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="dashboard-container hide">
+      <header>
+        <nav>
+          <div class="logo"></div>
+          <div class="menu">
+            <ul class="list">
+              <li class="list-item">
+                <a href="/pages/allProducts.html"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </li>
+              <li class="list-item">
+                <a href="/pages/manageCategory.html"
+                  ><i class="fa-solid fa-table-list"></i
+                ></a>
+              </li>
+              <li class="list-item">
+                <a href="/pages/addProduct.html"
+                  ><i class="fa-solid fa-cart-plus"></i
+                ></a>
+              </li>
+              <li class="list-item logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div class="dashboard">
+        <div class="add-product">
+          <form class="add-product-form">
+            <div class="add-product-heading">
+              <h1>Add Product</h1>
+            </div>
+
+            <div class="form-text">
+              <input
+                type="text"
+                name="name"
+                placeholder="Product Name"
+                required
+              />
+              <select class="select-category" name="category" required>
+                <option value="">Select category</option>
+              </select>
+            </div>
+
+            <div class="form-number">
+              <input
+                type="number"
+                name="quantity"
+                placeholder="Enter Quantity available"
+                required
+              />
+              <input
+                type="number"
+                name="price"
+                placeholder="Enter the product price"
+                required
+              />
+            </div>
+            <div class="form-textarea">
+              <textarea
+                name="description"
+                rows="6"
+                cols="50"
+                placeholder="Enter the description about the product"
+                required
+              ></textarea>
+            </div>
+            <div class="success">
+              <p>Product Successfully Added</p>
+            </div>
+            <div class="btn">
+              <button type="submit" class="submit">Add product</button>
+              <button type="reset" class="reset">Reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../src/addProduct.js" type="module"></script>
+  </body>
+</html>
