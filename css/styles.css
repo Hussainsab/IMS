@@ -397,6 +397,16 @@ header {
   box-shadow: 2px 2px 10px 5px var(--dark-blue);
 }
 
+.info {
+  display: block;
+}
+
+.info.success {
+  color: green;
+}
+.info.error {
+  color: red;
+}
 /* =============== all products============== */
 
 .all-products {
@@ -481,5 +491,3 @@ header {
 .edit {
   background-color: rgba(0, 128, 0, 0.623);
 }
-
-/* ======= login page style============= */

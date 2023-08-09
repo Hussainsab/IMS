@@ -24,12 +24,14 @@ function addCatFormToDom(type) {
               placeholder="Enter the description about Category"
               required
             ></textarea>
+            <p class="info"></p>
             <div class="btn">
               <button type="submit" class="submit">${type}</button>
               <button type="reset" class="reset">Reset</button>
             </div>
           </form>`;
   const categoryForm = document.querySelector(".add-category-form");
+  const pElement = document.querySelector(".info");
   categoryForm.addEventListener("submit", function (e) {
     e.preventDefault();
     let formData = new FormData(categoryForm);
@@ -37,21 +39,31 @@ function addCatFormToDom(type) {
     data.forEach((element) => {
       categoryObject[element[0]] = element[1];
     });
-    addCategory(categoryObject);
+    addCategory(categoryObject, pElement);
     categoryForm.reset();
   });
 }
 
 addCatFormToDom("Add Category");
 
-function addCategory(cat) {
+function addCategory(cat, pElement) {
   cat["catId"] = categories.length;
-  categories.push(cat);
-  localStorage.setItem("categories", JSON.stringify(categories));
-  alert("cat added successfull");
-  categories = JSON.parse(localStorage.getItem("categories"));
-  addCatListToDom(categories);
-  return;
+  let categoryName = cat.category.toLowerCase();
+  let found = categories.find(
+    (item) => item.category.toLowerCase() === categoryName
+  );
+  if (found === undefined) {
+    categories.push(cat);
+    localStorage.setItem("categories", JSON.stringify(categories));
+    pElement.innerHTML = "category added successfull";
+    pElement.classList.add("success");
+    categories = JSON.parse(localStorage.getItem("categories"));
+    addCatListToDom(categories);
+    return;
+  } else {
+    pElement.innerHTML = "category already exist";
+    pElement.classList.add("error");
+  }
 }
 
 function addCatListToDom(categories) {
