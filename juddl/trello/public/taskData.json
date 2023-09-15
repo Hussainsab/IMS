@@ -1,0 +1,60 @@
+{
+  "taskTodos": {
+    "todoList": [
+      {
+        "title": "Project1",
+        "stageName": "todo",
+        "id": "Project1"
+      },
+      {
+        "title": "Project2",
+        "stageName": "todo",
+        "id": "Project2"
+      },
+      {
+        "title": "Project3",
+        "stageName": "todo",
+        "id": "Project3"
+      },
+      {
+        "title": "Project4",
+        "stageName": "todo",
+        "id": "Project4"
+      },
+      {
+        "title": "Project5",
+        "stageName": "todo",
+        "id": "Project5"
+      }
+    ],
+    "doingList": [
+      {
+        "title": "Project6",
+        "stageName": "doing",
+        "id": "Project6"
+      },
+      {
+        "title": "Project-F",
+        "stageName": "doing",
+        "id": "Project-F"
+      },
+      {
+        "title": "Project-G5",
+        "stageName": "doing",
+        "id": "Project-G5"
+      }
+    ],
+    "doneList": [
+      {
+        "title": "Project-A",
+        "stageName": "done",
+        "id": "Project-A"
+      },
+      {
+        "title": "ProjectE",
+        "stageName": "done",
+        "id": "ProjectE"
+      }
+    ]
+  }
+}

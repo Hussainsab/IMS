@@ -1,0 +1,13 @@
+.App {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 10px;
+  background: linear-gradient(
+    var(--background-color-dark),
+    var(--background-color-light)
+  );
+  padding: 20px;
+  width: 100vw;
+  height: 95vh;
+}

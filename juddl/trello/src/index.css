@@ -1,0 +1,20 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color-dark: #093579;
+  --background-color-light: #00d4ff;
+  --stage-background-color-dark: ;
+  --stage-background-color-lite: rgba(232, 238, 236, 0.83);
+}
+
+input,
+button {
+  outline: none;
+  border: none;
+}
